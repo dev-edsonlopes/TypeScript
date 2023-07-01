@@ -14,10 +14,13 @@ Aqui, você está instalando duas dependências de desenvolvimento: o TypeScript
 
 ## Passo 3: Criação dos arquivos
 Crie um arquivo `main.ts` dentro da pasta `src`. Esse será o ponto de entrada do seu aplicativo TypeScript.
-Passo 4: Inicialização do TypeScript
+
+## Passo 4: Inicialização do TypeScript
+
 ```csharp
 npx tsc --init
 ```
+
 Esse comando inicializa o TypeScript no seu projeto e cria um arquivo de configuração chamado `tsconfig.json`. Esse arquivo contém várias opções de configuração que podem ser ajustadas para atender às necessidades do seu projeto.
 
 ## Passo 5: Configuração dos scripts no arquivo `package.json`
