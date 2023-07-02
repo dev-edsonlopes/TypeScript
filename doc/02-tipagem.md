@@ -23,7 +23,7 @@ console.log(message)
 let numeric: number = 10
 console.log(numeric / 3) // 3.3333333333333335
 ```
-   Ele retorna qualquer tipo de números, inteiro/realEle retorna qualquer tipo de números, inteiro/real
+   Ele retorna qualquer tipo de números, inteiro/real
 
 `string`: representa sequências de caracteres.
 
@@ -95,19 +95,6 @@ enum Colors {
 
 const white: string = Colors.white
 console.log(white)
-
-enum weekDays {
-  Domingo,
-  Segunda,
-  Terça,
-  Quarta,
-  Quinta,
-  Sábado
-}
-
-let dia: weekDays = weekDays.Sábado;
-console.log(`Numero do dia: ${dia}`);  
-console.log(weekDays[5]); 
 ```
 
 ## Tipos Avançados
