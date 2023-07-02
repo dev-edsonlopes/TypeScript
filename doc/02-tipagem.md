@@ -6,10 +6,10 @@
 let message: string = "Hello World!"
 console.log(message)
 ```
-`let`:é uma palavra-chave usada para declarar uma variável local com escopo de bloco.
-`message`:  é o nome da variável que você está declarando.
-`string`:  é o tipo de dado que a variável pode armazenar.
-`"Hello World!"`: é o valor inicial atribuído à variável.
+- `let`:é uma palavra-chave usada para declarar uma variável local com escopo de bloco.
+- `message`:  é o nome da variável que você está declarando.
+- `string`:  é o tipo de dado que a variável pode armazenar.
+- `"Hello World!"`: é o valor inicial atribuído à variável.
 
 `tipo variável` `nome da variável`: `tipo de dado` = `Valor da variável`
 
@@ -109,3 +109,5 @@ let dia: weekDays = weekDays.Sábado;
 console.log(`Numero do dia: ${dia}`);  
 console.log(weekDays[5]); 
 ```
+
+## Tipos Avançados
