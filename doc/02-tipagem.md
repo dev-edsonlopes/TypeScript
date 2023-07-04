@@ -98,3 +98,60 @@ console.log(white)
 ```
 
 ## Tipos Avançados
+
+### Union Types (Tipos de União)
+
+Union types permitem que uma variável tenha mais de um tipo possível. Você pode definir um union type usando o operador `|`. Por exemplo:
+
+```typescript
+let age: number | string;
+age = 25; // Válido
+age = "vinte e cinco"; // Válido
+age = true; // Inválido, pois boolean não está no union type
+
+```
+
+Também é possível especificar o valor da variável por exemplo:
+
+```typescript
+let showPet = (pet: 'cat' | 'dog' | 'bird') => console.log(pet)  // apenas dois valores possíveis: 'cat' ou 'dog'.
+
+showPet('cat'); // Imprime 'cat'
+showPet('dog'); // Imprime 'dog'
+showPet('bird'); // Erro, pois 'bird' não está no union type
+```
+
+### Type Aliases (Tipos Apelidos)
+
+Type Aliases permitem criar nomes alternativos para tipos existentes ou definir tipos personalizados, tornando o código mais legível e expressivo.
+
+```typescript
+type Pet = 'cat'| 'dog'| 'bird'
+
+let showPet = (pet: Pet) => console.log(pet)
+
+showPet('cat'); // Imprime 'cat'
+showPet('dog'); // Imprime 'dog'
+showPet('bird'); // Imprime 'bird'
+showPet('snake'); // Erro, 'snake' não está no type alias Pet
+```
+
+### Type Inference (Tipo de inferência)
+
+Type Inference é a capacidade do TypeScript de deduzir automaticamente o tipo de uma variável com base no valor atribuído a ela.
+
+```typescript
+let message = "Hello, TypeScript!";
+```
+Nesse caso, a variável message é inicializada com a string "Hello, TypeScript!". O TypeScript, através da inferência de tipos, deduzirá automaticamente que o tipo da variável message é string. Não há necessidade de especificar explicitamente o tipo da variável nesse caso.
+
+### Type Assertion (Asserção de tipo)
+
+Type Assertion é uma maneira de informar explicitamente ao compilador do TypeScript sobre o tipo de uma variável, mesmo quando o compilador não é capaz de inferir esse tipo automaticamente.
+
+```typescript
+let value: any = "Hello, TypeScript!";
+let length: number = (value as string).length;
+
+console.log(len) // 18
+```

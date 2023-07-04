@@ -1,0 +1,2 @@
+# Tipando objetos
+
