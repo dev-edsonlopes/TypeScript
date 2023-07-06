@@ -66,3 +66,53 @@ const today = DaysOfWeek.Sexta
 
 console.log(`Hoje é ${DaysOfWeek[today]}`)
 ```
+
+### Exercício 6:
+6. Declare uma variável chamada myVariable com o tipo union number | boolean. Atribua a ela um valor numérico e, em seguida, imprima seu valor no console.
+
+```typescript
+let myVariable: number | boolean;
+
+myVariable = 16;
+
+console.log(myVariable);
+```
+### Exercício 7:
+7. Crie um type alias chamado Person que represente um objeto com as propriedades name (string) e age (number). Em seguida, declare uma variável chamada person do tipo Person e atribua a ela um objeto com um nome e uma idade. Imprima as propriedades name e age desse objeto no console.
+
+```typescript 
+type Person = {
+    name: string;
+    age: number;
+  }
+
+let person: Person = {
+    name: "Edson",
+    age: 23
+}
+
+console.log(person)
+```
+### Exercicios 8:
+
+8. Declare uma função chamada multiply que recebe dois parâmetros do tipo number. A função deve retornar o resultado da multiplicação dos dois números. Chame a função com dois argumentos numéricos e imprima o resultado no console.
+
+```typescript
+function multiply(a: number, b: number) {
+    return a * b
+} 
+
+console.log(multiply(7,3))
+
+```
+
+### Exercícios 9:
+
+9. Declare uma variável chamada value do tipo any e atribua a ela um valor numérico. Use uma type assertion para informar ao compilador que value é uma string e, em seguida, imprima seu comprimento no console.
+
+```typescript
+let value: any = "Hello, TypeScript!";
+let len: number = (value as string).length;
+console.log(len);
+
+```

@@ -1,4 +1,11 @@
-let value: any = "Hello, TypeScript!";
-let len: number = (value as string).length;
+type Person = {
+    name: string;
+    age: number;
+  }
 
-console.log(len)
+let person: Person = {
+    name: "Edson",
+    age: 23
+}
+
+console.log(person)
